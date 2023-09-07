@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ItemButton from './components/ItemButton';
+import Bill from './components/Bill';
 import styled from 'styled-components';
 
 const OrderScreen = () => {
@@ -24,6 +25,7 @@ const OrderScreen = () => {
 						<ItemButton itemName="coke" itemPrice={190} addToOrder={addToOrder} />
 						<ItemButton itemName="beer" itemPrice={580} addToOrder={addToOrder} />
 					</div>
+					<Bill itemsOrdered={itemsOrdered} totalPrice={totalPrice} />
 				</MenuAndBillContainer>
 			</OrderScreenContainer>
 		</>
