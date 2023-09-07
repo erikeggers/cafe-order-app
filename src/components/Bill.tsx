@@ -9,10 +9,10 @@ type BillProps = {
 const Bill = ({ itemsOrdered, totalPrice }: BillProps) => {
 	return (
 		<BillContainer>
-			<span>Your Bill</span>
+			<p>Your Bill</p>
 			<Seperator />
-			<span id="count">Items Ordered : {itemsOrdered}</span>
-			<span id="price">Total Price : {totalPrice} yen</span>
+			<p>Items Ordered : <span id="count">{itemsOrdered}</span></p>
+			<p>Total Price : <span id="price">{totalPrice}</span> yen</p>
 		</BillContainer>
 	)
 }
@@ -26,9 +26,8 @@ const BillContainer = styled.div`
 	box-shadow: 0 0 10px #ccc;
 	border-radius: 5px;
 	padding: 20px;
-	span {
-		marign: 0;
-		display: block;
+	p {
+		margin: 0;
 		font-size: 1.2rem;
 	}
 `;
