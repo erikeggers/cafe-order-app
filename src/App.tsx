@@ -1,10 +1,9 @@
 import React from 'react';
+import OrderScreen from './OrderScreen';
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <OrderScreen />
   );
 }
 
